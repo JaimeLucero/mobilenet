@@ -1,0 +1,41 @@
+MobileNetV2 Rice Variety Classification
+This project implements a MobileNetV2 model fine-tuned with ImageNet pre-trained weights to classify different rice varieties. The model was trained on a custom dataset comprising five rice varieties: Arborio, Karacadag, Jasmine, Basmati, and Ipsala. It achieved an impressive 95% accuracy on the test set.
+
+Project Overview
+Rice is a staple food for millions worldwide, and identifying specific rice varieties is crucial in ensuring quality control and proper utilization. This project leverages MobileNetV2, a lightweight and efficient convolutional neural network, to classify rice varieties with high accuracy.
+
+Key Features
+Pre-trained Weights: Uses ImageNet weights for transfer learning.
+High Accuracy: Achieved 95% accuracy on the test dataset.
+Lightweight Model: MobileNetV2 is optimized for devices with limited computational resources, making it ideal for real-world deployment.
+
+Dataset
+The dataset comprises five rice varieties:
+
+Arborio
+Karacadag
+Jasmine
+Basmati
+Ipsala
+Data Split
+Training Set: 80% of the dataset
+Test Set: 20% of the dataset
+The images were preprocessed with standard normalization and resizing to fit the input dimensions of MobileNetV2 (224x224 pixels).
+
+Model Architecture
+The model is based on MobileNetV2, a lightweight CNN architecture designed for mobile and embedded vision applications. Key characteristics include:
+
+Depthwise Separable Convolutions for reduced computation.
+ImageNet Pre-trained Weights for transfer learning.
+Fine-Tuning: The last layers of the model were retrained on the rice variety dataset to adapt the features to this specific classification task.
+Final Layers
+Fully Connected Layer with 5 output nodes (one for each rice variety).
+Softmax activation for class probabilities.
+
+
+Results
+Accuracy: The model achieved 95% accuracy on the test dataset.
+Loss: Minimal loss, indicating a well-trained model.
+Confusion Matrix
+The confusion matrix shows excellent class-wise performance, with minimal misclassifications across the rice varieties.
+
